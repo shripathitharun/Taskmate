@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+   <title>Welcome to Taskmate</title>
+{% endblock title %}
+{% block content %}
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-lg-4">
+         <img src="{% static 'images/coding.jpg' %}" alt="Coding image" class="rounded-lg shadow sm " width="360" height="300">
+      </div>
+      <div class="col-lg-4">
+        <img src="{% static 'images/coding.jpg' %}" alt="Coding image" class="rounded-lg shadow sm " width="360" height="300">
+      </div>
+      <div class="col-lg-4">
+        <img src="{% static 'images/coding.jpg' %}" alt="Coding image" class="rounded-lg shadow sm " width="360" height="300">
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="row">
+          <div class="col-md-10 offset-md-1">
+            <center><p class="h1 text-primary">Want to know your tasks!! Here is your Taskmate</p></center>
+            </br>
+            <center><p class="h3 ">You can use Taskmate to write your ongoing,completed and the tasks you have to do</p></center>
+            <center><a href="{% url 'todolist' %}"><button type="button" class="btn btn-primary btn-lg mg-3 shadow">This way</button></a></center>
+            <!-- <center><p class="h2">Get your tasks anytime at one place</p></center> -->
+          </div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}

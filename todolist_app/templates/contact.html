@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+{% block title %}
+   <title>Contact us - taskmate</title>
+{% endblock title %}
+{% block content %}
+  <div class="container">
+    <style>
+        .social-icons {
+        text-align: center;
+        }
+      .social-icons li {
+        display:inline-block;
+        list-style-type:none;
+        -webkit-user-select:none;
+        -moz-user-select:none;
+        }
+      .social-icons li a {
+        border-bottom: none;
+        }
+      .social-icons li img {
+        width:100px;
+        height:100px;
+        margin-right: 20px;
+      }
+      </style>
+      </br>
+      <center><h2>You can contact us any time</h2>
+      </br>
+      <ul class="social-icons">
+        <li class="mr-5"><a href="https://www.facebook.com/profile.php?id=100010515845501"><img src="{% static 'images/facebook.png' %}" /></a></li>
+        <li class="mr-5"><a href="https://www.instagram.com/manoj._.kola/"><img src="{% static 'images/insta.png' %}" /></a></li>
+        <li class="mr-5"><a href="https://www.linkedin.com/in/kola-manoj-kameswara-rao-1a89031b4/"><img src="{% static 'images/linkedin.png' %}" /></a></li>
+        <li class="mr-5"><a href="https://github.com/Kolamanojkameswararao"><img src="{% static 'images/github.png' %}" /></a></li>
+
+      </ul>
+      </br>
+      </br>
+      <center><h4>Email : manojkola45@gmail.com</h4>
+  </div>
+{% endblock content %}
